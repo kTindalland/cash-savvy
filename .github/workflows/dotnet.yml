@@ -26,3 +26,6 @@ jobs:
     - name: Test
       working-directory: ./CashSavvy
       run: dotnet test --no-build --verbosity normal
+    - name: Publish
+      working-directory: ./CashSavvy
+      run: dotnet publish --no-restore -c Release -o ./publish
