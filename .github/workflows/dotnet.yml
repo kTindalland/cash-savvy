@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ main ]
 
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
 jobs:
   build:
 
@@ -30,8 +34,24 @@ jobs:
       working-directory: ./CashSavvy
       run: dotnet publish --no-restore -c Release -o ./publish
       
-    - name: Build and Publish container
-      uses: TCPShield/gp-docker-action@1.1.13
+    - name: Log in to the container registry
+      uses: docker/login-action@1.10.0
       with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          image-name: cash-savvy
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          
+    - name: Extract metadata (tags, labels) for Docker
+      id: meta
+      uses: docker/metadata-action@3.5.0
+      with:
+        images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+        
+    - name: Build and push Docker image
+      uses: docker/build-push-action@2.7.0
+      with:
+        context: .
+        push: true
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
+      
