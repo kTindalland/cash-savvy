@@ -21,6 +21,8 @@ jobs:
       working-directory: ./CashSavvy
       run: dotnet restore
     - name: Build
+      working-directory: ./CashSavvy
       run: dotnet build --no-restore
     - name: Test
+      working-directory: ./CashSavvy
       run: dotnet test --no-build --verbosity normal
