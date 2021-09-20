@@ -29,3 +29,9 @@ jobs:
     - name: Publish
       working-directory: ./CashSavvy
       run: dotnet publish --no-restore -c Release -o ./publish
+      
+    - name: Build and Publish container
+      uses: VaultVulp/gp-docker-action@1.1.12
+      with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          image-name: cash-savvy
