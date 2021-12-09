@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30907.101
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashSavvy", "CashSavvy\CashSavvy.csproj", "{BDEF5692-E8BD-48DD-8792-A663EE763A89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashSavvy", "CashSavvy\CashSavvy.csproj", "{60404CE0-4DC7-41C9-B661-E50FFA800E2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BDEF5692-E8BD-48DD-8792-A663EE763A89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BDEF5692-E8BD-48DD-8792-A663EE763A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BDEF5692-E8BD-48DD-8792-A663EE763A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BDEF5692-E8BD-48DD-8792-A663EE763A89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60404CE0-4DC7-41C9-B661-E50FFA800E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60404CE0-4DC7-41C9-B661-E50FFA800E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60404CE0-4DC7-41C9-B661-E50FFA800E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60404CE0-4DC7-41C9-B661-E50FFA800E2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {7FDAD795-10DB-4741-B7B3-C180798F9102}
+		SolutionGuid = {4DA512E9-E707-449A-9AD5-E163A02BC85D}
 	EndGlobalSection
 EndGlobal
