@@ -1,4 +1,4 @@
-name: .NET
+name: .NET Api
 
 on:
   push:
@@ -22,16 +22,16 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      working-directory: ./CashSavvy
+      working-directory: ./CashSavvy/CashSavvyApi
       run: dotnet restore
     - name: Build
-      working-directory: ./CashSavvy
+      working-directory: ./CashSavvy/CashSavvyApi
       run: dotnet build --no-restore
     - name: Test
-      working-directory: ./CashSavvy
+      working-directory: ./CashSavvy/CashSavvyApi
       run: dotnet test --no-build --verbosity normal
     - name: Publish
-      working-directory: ./CashSavvy
+      working-directory: ./CashSavvy/CashSavvyApi
       run: dotnet publish --no-restore -c Release -o ./publish
       
     - name: Set up QEMU
@@ -56,9 +56,9 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v2.7.0
       with:
-        context: .
+        context: ./CashSavvy/CashSavvyApi
         platforms: linux/amd64,linux/arm/v7
         push: true
-        tags: ghcr.io/ktindalland/cash-savvy:latest
+        tags: ghcr.io/ktindalland/cash-savvy-api:latest
         labels: ${{ steps.meta.outputs.labels }}
       
