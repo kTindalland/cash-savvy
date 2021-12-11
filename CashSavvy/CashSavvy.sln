@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashSavvy", "CashSavvy\CashSavvy.csproj", "{60404CE0-4DC7-41C9-B661-E50FFA800E2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashSavvyApi", "CashSavvyApi\CashSavvyApi.csproj", "{B4905C0C-82A1-4107-BD16-7138CEA4DD5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashSavvyDatabaseAccess", "CashSavvyDatabaseAccess\CashSavvyDatabaseAccess.csproj", "{4CB36A88-4A5A-456B-A540-928FD9C18005}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{60404CE0-4DC7-41C9-B661-E50FFA800E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60404CE0-4DC7-41C9-B661-E50FFA800E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60404CE0-4DC7-41C9-B661-E50FFA800E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4905C0C-82A1-4107-BD16-7138CEA4DD5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4905C0C-82A1-4107-BD16-7138CEA4DD5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4905C0C-82A1-4107-BD16-7138CEA4DD5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4905C0C-82A1-4107-BD16-7138CEA4DD5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CB36A88-4A5A-456B-A540-928FD9C18005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CB36A88-4A5A-456B-A540-928FD9C18005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CB36A88-4A5A-456B-A540-928FD9C18005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CB36A88-4A5A-456B-A540-928FD9C18005}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
