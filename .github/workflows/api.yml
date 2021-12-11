@@ -59,6 +59,6 @@ jobs:
         context: ./CashSavvy/CashSavvyApi
         platforms: linux/amd64,linux/arm/v7
         push: true
-        tags: cash-savvy-api:latest
+        tags: ghcr.io/ktindalland/cash-savvy-api:latest
         labels: ${{ steps.meta.outputs.labels }}
       
