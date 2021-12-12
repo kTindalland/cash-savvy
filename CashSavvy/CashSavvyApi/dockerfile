@@ -1,3 +1,9 @@
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
 ADD ./publish ./
-ENTRYPOINT ["dotnet", "CashSavvyApi.dll"]
+
+
+RUN echo 'ping localhost &' > /bootstrap.sh
+RUN echo 'sleep infinity' >> /bootstrap.sh
+RUN chmod +x /bootstrap.sh
+
+ENTRYPOINT ["./bootstrap.sh"]
