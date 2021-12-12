@@ -6,4 +6,4 @@ RUN echo 'ping localhost &' > /bootstrap.sh
 RUN echo 'sleep infinity' >> /bootstrap.sh
 RUN chmod +x /bootstrap.sh
 
-ENTRYPOINT ["./bootstrap.sh"]
+CMD /bootstrap.sh
