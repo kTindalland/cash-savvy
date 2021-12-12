@@ -55,8 +55,9 @@ jobs:
         
     - name: Build and push Docker image
       uses: docker/build-push-action@v2.7.0
+      working-directory: ./CashSavvy/CashSavvyApi
       with:
-        context: ./CashSavvy/CashSavvyApi
+        context: .
         platforms: linux/amd64,linux/arm/v7
         push: true
         tags: ghcr.io/ktindalland/cash-savvy-api:latest
